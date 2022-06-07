@@ -28,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         fetchData()
+
+        binding.imgRefresh.setOnClickListener {
+            fetchResponse()
+        }
     }
 
     private fun fetchData() {
