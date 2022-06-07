@@ -1,5 +1,6 @@
 package com.example.weatherappwithrxjava.di
 
+import android.app.Application
 import com.example.weatherappwithrxjava.constants.Constants
 import com.example.weatherappwithrxjava.constants.Constants.BASE_URL
 import com.example.weatherappwithrxjava.model.DogService
@@ -49,4 +50,6 @@ object NeworkModule {
     @Provides
     fun provideCurrencyService(retrofit: Retrofit):DogService =
             retrofit.create(DogService::class.java)
+
+
 }
